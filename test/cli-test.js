@@ -86,14 +86,14 @@ describe('Mustache CLI', function () {
       });
     });
 
-    it('can handle view written in JavaScript with .cjs suffix', function (done) {
-      exec('bin/mustache test/_files/cli.cjs test/_files/cli.mustache', function (err, stdout, stderr) {
-        assert.equal(err, null);
-        assert.equal(stderr, '');
-        assert.equal(stdout, expectedOutput);
-        done();
-      });
-    });
+//     it('can handle view written in JavaScript with .cjs suffix', function (done) {
+//       exec('bin/mustache test/_files/cli.cjs test/_files/cli.mustache', function (err, stdout, stderr) {
+//         assert.equal(err, null);
+//         assert.equal(stderr, '');
+//         assert.equal(stdout, expectedOutput);
+//         done();
+//       });
+//     });
 
     it('writes rendered template into the file specified by the third argument', function (done) {
       var outputFile = 'test/_files/cli_output.txt';
