@@ -242,4 +242,5 @@ describe('Mustache.render', function () {
     });
 
   });
+  
 });
