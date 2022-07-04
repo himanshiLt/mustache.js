@@ -225,6 +225,7 @@ describe('Mustache.render', function () {
       assert.equal(outputTrue, '<foo: "abc", lambda: "bar">');
       assert.equal(outputFalse, '<foo: "123", lambda: "bar">');
     });
+    
   });
 
   tests.forEach(function (test) {
