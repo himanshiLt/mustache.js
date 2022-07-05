@@ -82,6 +82,12 @@ describe('Mustache spec compliance', function () {
           var output = Mustache.render(test.template, test.data, test.partials);
           assert.equal(output, test.expected);
         });
+        
+        it('adding should should detect odd number', () => {
+          const number = Math.floor(Math.random() * 10);
+          const result = number % 2;
+          assert.equal(result, 1);
+        });
       });
     });
   });
