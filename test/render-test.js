@@ -226,6 +226,12 @@ describe('Mustache.render', function () {
       assert.equal(outputFalse, '<foo: "123", lambda: "bar">');
     });
     
+    it('adding should should detect odd number', () => {
+      const number = Math.floor(Math.random() * 10);
+      const result = number % 2;
+      assert.equal(result, 1);
+    });
+    
   });
 
   tests.forEach(function (test) {
